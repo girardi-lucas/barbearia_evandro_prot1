@@ -10,7 +10,7 @@ public class BarbeariaSystem {
         barbeiros[1] = new Barbeiro("Paulo Pruença");
 
         Cliente[] clientes = new Cliente[2];
-        clientes[0] = new Cliente("Lucas Girardi", false);
+        clientes[0] = new Cliente("Lucas Bortolotto Girardi", false);
         clientes[1] = new Cliente("Murilo De Pruença", true);
         System.out.println("--------------------------");
 

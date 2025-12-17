@@ -1,3 +1,9 @@
+package Main;
+
+import BarbeirosEClientes.Barbeiro;
+import BarbeirosEClientes.Cliente;
+import ServicosEMetodos.TipoServico;
+
 public class BarbeariaSystem {
     public static void main(String[] args) {
 

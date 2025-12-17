@@ -1,4 +1,8 @@
-public class Cliente extends Pessoa{
+package BarbeirosEClientes;
+
+import ServicosEMetodos.TipoServico;
+
+public class Cliente extends Pessoa {
 
     private boolean isVip;
 
@@ -31,7 +35,7 @@ public class Cliente extends Pessoa{
 
     //Sobrescrever toString:
     public String toString() {
-        return "Cliente: " + getNome() + "\nStatus do vip: " + isVip;
+        return "BarbeirosEClientes.Cliente: " + getNome() + "\nStatus do vip: " + isVip;
     }
 
 

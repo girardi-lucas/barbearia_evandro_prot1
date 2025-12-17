@@ -1,3 +1,5 @@
+package ServicosEMetodos;
+
 public enum TipoServico {
 
     // Serviços disponíveis:

@@ -1,3 +1,8 @@
+package BarbeirosEClientes;
+
+import ServicosEMetodos.TipoServico;
+import ServicosEMetodos.TrabalhoBarbeiro;
+
 public class Barbeiro extends Pessoa implements TrabalhoBarbeiro {
 
 
@@ -13,7 +18,7 @@ public class Barbeiro extends Pessoa implements TrabalhoBarbeiro {
         super(nome);
     }
 
-    //Chamando a interface TrabalhoBarbeiro:
+    //Chamando a interface ServicosEMetodos.TrabalhoBarbeiro:
 
     @Override
     public void realizarServico() {
@@ -26,7 +31,7 @@ public class Barbeiro extends Pessoa implements TrabalhoBarbeiro {
     }
 
     public void realizarServico(String nomeDoCliente, TipoServico tipoServico) {
-        System.out.println("Barbeiro: " + this.getNome() + " está atendendo o " + nomeDoCliente);
+        System.out.println("BarbeirosEClientes.Barbeiro: " + this.getNome() + " está atendendo o " + nomeDoCliente);
         double valor = tipoServico.getPreco();
         System.out.println("Valor a cobrar do " + nomeDoCliente + ": R$" + valor);
     }

@@ -1,29 +1,29 @@
 package Main;
 
-import BarbeirosEClientes.Barbeiro;
-import BarbeirosEClientes.Cliente;
-import ServicosEMetodos.TipoServico;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BarbeariaSystem {
     public static void main(String[] args) {
 
         int gavetasAbertas = 5;
 
-        //Criando o array de barbeiros e clientes:
+        //Criando o arrayList de barbeiros e clientes:
 
-        Barbeiro[] barbeiros = new Barbeiro[2];
-        barbeiros[0] = new Barbeiro("Evandro Nunes");
-        barbeiros[1] = new Barbeiro("Paulo Pruença");
+        List<Barbeiro> barbeiros = new ArrayList<>();
+        barbeiros.add(new Barbeiro("Evandro Nunes"));
+        barbeiros.add(new Barbeiro("Paulo Pruença"));
 
-        Cliente[] clientes = new Cliente[2];
-        clientes[0] = new Cliente("Lucas Bortolotto Girardi", false);
-        clientes[1] = new Cliente("Murilo De Pruença", true);
+        List<Cliente> clientes = new ArrayList<>();
+        clientes.add(new Cliente("Lucas Girardi", false));
+        clientes.add(new Cliente("Murilo Pruença", true));
+
         System.out.println("--------------------------");
 
 
         for(Cliente c : clientes) {
             System.out.println(c);
-            Barbeiro barbeiroDaVez = barbeiros[0];
+            Barbeiro barbeiroDaVez = barbeiros.getFirst();
             TipoServico tipoServico = TipoServico.CORTE_E_BARBA;
             barbeiroDaVez.realizarServico(c.getNome(), tipoServico);
             System.out.println("--------------------------");

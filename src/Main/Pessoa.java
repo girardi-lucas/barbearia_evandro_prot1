@@ -1,7 +1,4 @@
-package BarbeirosEClientes;
-
-import ServicosEMetodos.TipoServico;
-import ServicosEMetodos.TrabalhoBarbeiro;
+package Main;
 
 public abstract class Pessoa implements TrabalhoBarbeiro {
     private String nome;

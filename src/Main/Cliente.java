@@ -1,6 +1,4 @@
-package BarbeirosEClientes;
-
-import ServicosEMetodos.TipoServico;
+package Main;
 
 public class Cliente extends Pessoa {
 
@@ -35,7 +33,7 @@ public class Cliente extends Pessoa {
 
     //Sobrescrever toString:
     public String toString() {
-        return "BarbeirosEClientes.Cliente: " + getNome() + "\nStatus do vip: " + isVip;
+        return "Main.Cliente: " + getNome() + "\nStatus do vip: " + isVip;
     }
 
 

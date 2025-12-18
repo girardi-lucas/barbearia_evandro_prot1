@@ -1,4 +1,4 @@
-package ServicosEMetodos;
+package Main;
 
 public enum TipoServico {
 
